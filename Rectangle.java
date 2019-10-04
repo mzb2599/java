@@ -1,20 +1,22 @@
 import java.util.*;
-class Rectangle
-{
-static int rectarea(int l,int b)
-{
-return(l*b);
+class Rectangle{
+        int l,w;
+        Rectangle(int x,int y)
+        {
+            l=x;
+            w=y;
+        }
+        int Rectarea()
+        {
+            return(l*w);
+        }
 }
-public static void main(String[] args)
+class RectangleArea
 {
-int r,l,b;
-Scanner sce=new Scanner(System.in);
-System.out.println("Enter the length");
-l=sce.nextInt();
-System.out.println("Enter the length");
-b=sce.nextInt();
-r=rectarea(l,b);
-System.out.println("Area of the rectangle is "+r);
-System.out.println("length = "+l +" bredth = "+b);
-}
+    public static void main(String[] args) {
+        Rectangle r =new Rectangle(10,50);
+        int area =r.RectangleArea();
+        System.out.println("Length of Rectangle is "+ l+"Bredth of rectangle is "+ b);
+        System.out.println("Area of Rectangle is "+area);
+    }
 }
